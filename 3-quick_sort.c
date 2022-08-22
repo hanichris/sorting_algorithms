@@ -32,10 +32,10 @@ int partition(int *array, size_t size, int low_idx, int high_idx)
 		if (array[i] < array[p])
 		{
 			swap(&array[i], &array[firsthigh]);
+			print_array(array, size);
 			firsthigh++;
 		}
 	swap(&array[firsthigh], &array[p]);
-	print_array(array, size);
 	return (firsthigh);
 }
 
